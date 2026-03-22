@@ -1,6 +1,6 @@
 # FrostyGMRS Android IAX Core
 
-This repository contains the core Android and native C++ IAX client pieces extracted from FrostyGMRS Mobile so they can be reused in another Android project without publishing the full app.
+This repository contains the core Android and native C++ IAX client pieces extracted from FrostyGMRS Mobile.
 
 ## What is included
 
@@ -56,16 +56,6 @@ This bundle was cleaned for GitHub sharing by removing or reducing logs that exp
 
 The core logic and Frosty naming were left intact so the code can still be dropped into another project with minimal rework.
 
-## What is not included
-
-This repository does not include the rest of the FrostyGMRS Mobile app, such as:
-
-- node browser UI
-- app screens and navigation
-- login storage
-- app-specific service wrappers outside this core set
-- private server configuration
-
 ## Integration notes
 
 At a high level, another Android project needs to:
@@ -87,14 +77,6 @@ This code assumes an Android project that already has:
 - microphone permission handling
 - an audio path for `AudioRecord` and `AudioTrack`
 
-## Security note
-
-Do not hardcode your real server values, passwords, tokens, or private endpoints in source before publishing your own project.
-
 ## License
 
 This repository is provided under the MIT License. See `LICENSE`.
-
-## Third-party code and attribution
-
-This bundle includes files that may contain protocol or utility logic originally adapted from other sources before extraction into this repository. If you know any specific file was copied or adapted from another project, add the required attribution and license notice before publishing.
